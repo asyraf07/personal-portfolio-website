@@ -1,0 +1,103 @@
+/* Lato and Mulish Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Mulish:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: solid red 1px; */
+}
+
+body {
+  font-family: mulish, sans-serif;
+  color: #373f41;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a {
+  color: #373f41;
+  text-decoration: none;
+}
+
+button {
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #3c64b1;
+  outline: none;
+  border: solid #3c64b1 1px;
+  padding: 12px 18px;
+  font-family: mulish, sans-serif;
+  font-weight: 700px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #3c64b1;
+}
+
+nav {
+  position: fixed;
+  font-family: lato, sans-serif;
+  color: #3c64b1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 3%;
+  width: 100vw;
+  /* background-color: #f4f6fb; */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 30%;
+}
+
+nav ul li {
+  font-family: mulish, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #f4f6fb;
+  padding: 15% 20%;
+  height: 80vh;
+}
+
+#aboutme {
+  opacity: 65%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
