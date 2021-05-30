@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asyraf Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
     
-    <nav>
+    <nav id='navbar'>
         <h2>ASYRAF</h2>
         <ul>
             <li><a href="#skills">Skills</a></li>
@@ -17,16 +18,131 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div id="burger">
+            <span></span>
+        </div>
+        <div id="burger-list">
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header>
-        <h1>Welcome to My Portfolio Website</h1>
-        <p id="aboutme">About me Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, reprehenderit? Nisi illo enim nemo tempore minima magnam? Libero, illo modi.</p>
-        <div class="button-container">
-            <button>Projects</button>
-            <button>Skills</button>
-        </div>
-    </header>
+    <main>
+        <header>
+            <h1>Welcome to My Portfolio Website</h1>
+            <p id="aboutme">About me Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, reprehenderit? Nisi illo enim nemo tempore minima magnam? Libero, illo modi.</p>
+            <div class="button-container">
+                <button onclick="window.location.href = '#projects'">Projects</button>
+                <button onclick="window.location.href = '#skills'">Skills</button>
+            </div>
+        </header>
+
+        <section id=skills>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill"><i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git"></i>
+                    <h3>GIT</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node"></i>
+                    <h3>NodeJs</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-npm"></i>
+                    <h3>NPM</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Command Line</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+
+                <div class="project" id="smart-menu">
+                    <div class="img-container">
+                        <img src="./img/smart-menu.png" alt="smart-menu">
+                    </div>
+                    <h3>Smart-Menu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et debitis odio veniam quisquam alias ab blanditiis voluptates, vitae aspernatur harum, neque consequuntur vel ullam. Nemo!</p>
+                </div>
+
+                <div class="project" id="smart-menu">
+                    <div class="img-container">
+                        <img src="./img/test.png" alt="smart-menu">
+                    </div>
+                    <h3>Smart-Menu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et debitis odio veniam quisquam alias ab blanditiis voluptates, vitae aspernatur harum, neque consequuntur vel ullam. Nemo!</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="img-container">
+                    <img src="./img/profile.png" alt="smart-menu">
+                </div>
+                <div id="social-media">
+                    <div class="social-media-item" id="mail">
+                        <i class="fas fa-envelope"></i>
+                        <h2 onclick="window.open('mailto: asyraf.sr07@gmail.com', '_blank')">asyraf.sr07@gmail.com</h2>
+                    </div>
+                    <div class="social-media-item" id="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <h2 onclick="window.open('https://www.linkedin.com/in/asyraf-shafiyyurrahman-29a7761b1/', '_blank')">Asyraf Shafiyyurrahman</h2>
+                    </div>
+                    <div class="social-media-item" id="twitter">
+                        <i class="fab fa-twitter-square"></i>
+                        <h2 onclick="window.open('https://twitter.com/blalangsmbah', '_blank')">@blalangsmbah</h2>
+                    </div>
+                    <div class="social-media-item" id="facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <h2 onclick="window.open('https://www.facebook.com/thunders.kingfast', '_blank')">Asyraf Shafiyyurrahman</h2>
+                    </div>
+                    <div class="social-media-item" id="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <h2 onclick="window.open('https://www.instagram.com/kingfast07/', '_blank')">@kingfast07</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2021 | by Asyraf Shafiyyurrahman.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
